@@ -1,0 +1,127 @@
+import bcrypt from 'bcryptjs';
+import faker from 'faker';
+const users = [
+  {
+    firstName: 'Juan',
+    lastName: 'Suazo',
+    username: 'suazo',
+    email: 'juan@example.com',
+    password: bcrypt.hashSync('123456', 10),
+  },
+  {
+    firstName: 'Admin',
+    lastName: 'User',
+    username: 'admin',
+    email: 'admin@example.com',
+    password: bcrypt.hashSync('123456', 10),
+    isAdmin: true,
+  },
+  {
+    firstName: 'John',
+    lastName: 'Doe',
+    username: 'johndoe',
+    email: 'john@example.com',
+    password: bcrypt.hashSync('123456', 10),
+  },
+  {
+    firstName: 'Jane',
+    lastName: 'Doe',
+    username: 'janedoe',
+    email: 'jane@example.com',
+    password: bcrypt.hashSync('123456', 10),
+  },
+
+  {
+    firstName: 'Pedro',
+    lastName: 'Suazo',
+    username: 'pbsuazo',
+    email: 'pedro@example.com',
+    password: bcrypt.hashSync('123456', 10),
+  },
+  {
+    firstName: faker.name.findName(),
+    lastName: faker.name.lastName(),
+    username: faker.internet.userName(),
+    email: faker.internet.email(),
+    password: bcrypt.hashSync('123456', 10),
+  },
+  {
+    firstName: faker.name.findName(),
+    lastName: faker.name.lastName(),
+    username: faker.internet.userName(),
+    email: faker.internet.email(),
+    password: bcrypt.hashSync('123456', 10),
+  },
+  {
+    firstName: faker.name.findName(),
+    lastName: faker.name.lastName(),
+    username: faker.internet.userName(),
+    email: faker.internet.email(),
+    password: bcrypt.hashSync('123456', 10),
+  },
+  {
+    firstName: faker.name.findName(),
+    lastName: faker.name.lastName(),
+    username: faker.internet.userName(),
+    email: faker.internet.email(),
+    password: bcrypt.hashSync('123456', 10),
+  },
+  {
+    firstName: faker.name.findName(),
+    lastName: faker.name.lastName(),
+    username: faker.internet.userName(),
+    email: faker.internet.email(),
+    password: bcrypt.hashSync('123456', 10),
+  },
+  {
+    firstName: faker.name.findName(),
+    lastName: faker.name.lastName(),
+    username: faker.internet.userName(),
+    email: faker.internet.email(),
+    password: bcrypt.hashSync('123456', 10),
+  },
+  {
+    firstName: faker.name.findName(),
+    lastName: faker.name.lastName(),
+    username: faker.internet.userName(),
+    email: faker.internet.email(),
+    password: bcrypt.hashSync('123456', 10),
+  },
+  {
+    firstName: faker.name.findName(),
+    lastName: faker.name.lastName(),
+    username: faker.internet.userName(),
+    email: faker.internet.email(),
+    password: bcrypt.hashSync('123456', 10),
+  },
+  {
+    firstName: faker.name.findName(),
+    lastName: faker.name.lastName(),
+    username: faker.internet.userName(),
+    email: faker.internet.email(),
+    password: bcrypt.hashSync('123456', 10),
+  },
+  {
+    firstName: faker.name.findName(),
+    lastName: faker.name.lastName(),
+    username: faker.internet.userName(),
+    email: faker.internet.email(),
+    password: bcrypt.hashSync('123456', 10),
+  },
+  {
+    firstName: faker.name.findName(),
+    lastName: faker.name.lastName(),
+    username: faker.internet.userName(),
+    email: faker.internet.email(),
+    password: bcrypt.hashSync('123456', 10),
+  },
+  {
+    firstName: 'Delete Me',
+    lastName: 'Please',
+    username: 'delete',
+    email: 'delete@example.com',
+    password: bcrypt.hashSync('123456', 10),
+  },
+];
+
+export default users;

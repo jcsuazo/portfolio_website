@@ -1,0 +1,49 @@
+.myCenter {
+  background-color: #0099ff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.myWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.myWrapper .loginContainer {
+  padding: 20px;
+  width: 40vw;
+  max-width: 500px;
+  border: 1px solid #dedede;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.myWrapper form {
+  display: flex;
+  flex-direction: column;
+}
+.myWrapper input[type='text'],
+.myWrapper input[type='email'],
+.myWrapper input[type='password'] {
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  border-radius: 2px;
+  border: 1px solid #dedede;
+  background-color: #f2f2f2;
+}
+.myWrapper input[type='submit'] {
+  background-color: #0099ff;
+  color: #fff;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.myWrapper a {
+  color: #337ab7;
+}
